@@ -7,10 +7,11 @@
 
 
 #include <iostream>
+#include "../interface/AccountFactory.h"
 
 int main()
 {
-	std::cout << "Hello World\n";
+	AccountFactory::CreateAccount(1);
 	return 0;
 }
 
