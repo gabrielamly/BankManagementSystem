@@ -11,7 +11,7 @@
 #include <iostream>
 #include <vector>
 
-/* structure to maintain info of account holders*/
+/* structure to maintain information of account holders*/
 struct PersonModel
 {
     PersonModel(std::string pName, double pAccNo, double pAmount)
@@ -32,10 +32,9 @@ public:
     virtual bool openAccount() = 0;
     virtual bool checkBalance() = 0;
     virtual ~Account(){};
-    std::vector<PersonModel> personData;
 
+public:
+    static std::vector<PersonModel> personData;
 };
-
-
 
 #endif /* ACCOUNT_H_ */
