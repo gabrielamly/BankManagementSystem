@@ -30,7 +30,7 @@ class Account
 {
 public:
     virtual bool openAccount() = 0;
-    virtual bool checkBalance() = 0;
+    virtual bool checkBalance() const = 0;
     virtual ~Account(){};
 
 public:
